@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxbxmsp1bwflt"]
+
+[ext_resource type="PackedScene" uid="uid://cqityx7f6ph86" path="res://scenes/tile_map.tscn" id="1_c12ee"]
+[ext_resource type="PackedScene" uid="uid://of0b3n78k4wb" path="res://scenes/player.tscn" id="2_rkg15"]
+
+[node name="LevelTest" type="Node2D"]
+
+[node name="TileMap" parent="." instance=ExtResource("1_c12ee")]
+position = Vector2(-60.8584, -68.7398)
+layer_1/y_sort_origin = 40
+layer_1/z_index = 1
+
+[node name="CharacterBody2D" parent="TileMap" instance=ExtResource("2_rkg15")]
+z_index = 2
+y_sort_enabled = true
+position = Vector2(457.858, 467.74)

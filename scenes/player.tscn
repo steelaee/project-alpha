@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://of0b3n78k4wb"]
+
+[ext_resource type="Texture2D" uid="uid://n7b2ty6kt7vy" path="res://assets/city/tiles/SpriteTestcharackter.png" id="1_isahd"]
+[ext_resource type="Script" path="res://Character.gd" id="1_ru4hs"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(380, 470)
+platform_floor_layers = 4294967292
+platform_wall_layers = 1
+script = ExtResource("1_ru4hs")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, 5)
+scale = Vector2(0.555, 0.555)
+texture = ExtResource("1_isahd")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(42.9, 91)
+polygon = PackedVector2Array(-47.9, -68, -42.9, -65, -38.9, -68, -43.9, -71)
